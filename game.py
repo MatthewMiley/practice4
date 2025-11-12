@@ -1,8 +1,43 @@
 
 print("Welcome to Rock-Paper-Scissors!")
 
-print("Choose Rock, Paper, or Scissors: ")
+# list of choices
+moves = ['Rock', 'Paper', 'Scissors']
 
-user_input=input()
+# verify that input is valid
+def verify_input(input):
 
-print(f"You chose: {user_input}")
+    # verified is false by default
+    verified = False
+
+    # if input in title format = any item in moves, verified is true
+    for m in moves:
+        if input.title() == m:
+            verified = True
+    
+    return verified
+    
+        
+def play_game():
+    # ask player for input
+    user_input = input("Choose Rock, Paper, or Scissors: ")
+
+    # verify input with function
+    verified = verify_input(user_input)
+
+    # if input is valid
+    if verified = True:
+        print(f"You chose: {user_input}")
+
+    # if input is invalid, exit the function
+    else:
+        print(f"{user_input} is not valid")
+        return
+    
+    # generate a random number from 0 to 2
+
+
+    # see if user won or lost
+    
+
+
