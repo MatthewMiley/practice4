@@ -1,3 +1,4 @@
+import random
 
 print("Welcome to Rock-Paper-Scissors!")
 
@@ -35,7 +36,13 @@ def play_game():
         return
     
     # generate a random number from 0 to 2
+    print("Welcome to Rock-Paper-Scissors!")
 
+    computer_choices = ['Rock', 'Paper', 'Scissors']
+
+    computer_input = random.choice(computer_choices)
+
+    print(f"Computer chose: {computer_input}")
 
     # see if user won or lost
     
